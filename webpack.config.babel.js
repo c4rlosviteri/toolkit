@@ -5,7 +5,7 @@ const { publicPath } = config.server;
 
 module.exports = (env = {}) => {
   return {
-    devtool: env.production ? 'source-map' : 'cheap-module-eval-source-map',
+    devtool: env.production ? 'source-map' : 'eval-cheap-module-source-map',
     entry,
     output: output(env),
     plugins: plugins(env),
